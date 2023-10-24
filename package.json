@@ -1,0 +1,35 @@
+{
+  "name": "banter-boost-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && cd src && tsc",
+    "start": "nodemon --config nodemon.json src/index.ts",
+    "start:prod": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desruc/banter-boost-discord-bot.git"
+  },
+  "author": "desruc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/desruc/banter-boost-discord-bot/issues"
+  },
+  "homepage": "https://github.com/desruc/banter-boost-discord-bot#readme",
+  "devDependencies": {
+    "@types/node-schedule": "^2.1.2",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "node-schedule": "^2.1.1",
+    "winston": "^3.11.0"
+  }
+}
